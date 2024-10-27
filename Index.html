@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Mining</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bitcoin Mining Dashboard</h1>
+      <div class="btc-icon">
+        <img src="https://img.icons8.com/ios-filled/50/f7931a/bitcoin.png" alt="Bitcoin Icon">
+      </div>
+    </header>
+    
+    <section id="mining">
+      <h2>Mining Progress</h2>
+      <div id="mining-animation">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+      <div class="btc-count">
+        <h3>Total BTC Earned: <span id="btc">0.00000000</span></h3>
+      </div>
+      <button id="start-mining">Start Mining</button>
+    </section>
+
+    <section id="wallet">
+      <h2>Your Wallet</h2>
+      <p>Available BTC: <span id="wallet-btc">0.00000000</span></p>
+      <button id="deposit-btn">Deposit</button>
+      <button id="withdraw-btn">Withdraw</button>
+    </section>
+
+    <section id="transactions">
+      <h2>Recent Transactions</h2>
+      <div id="transactions-list"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
