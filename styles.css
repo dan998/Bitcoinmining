@@ -1,130 +1,100 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styles */
+/* Styling the container */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
 }
 
-/* Container Styles */
 .container {
-  background-color: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
-  width: 350px;
-  text-align: center;
+    width: 90%;
+    max-width: 600px;
+    background: #222;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
-/* Header Styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Header styling */
+header h1 {
+    font-size: 2em;
+    color: #f9d342;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.btc-icon img {
-  width: 30px;
-  height: 30px;
+/* Dashboard section styling */
+.dashboard {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
 }
 
-/* Section Headings */
-#mining h2,
-#wallet h2,
-#transactions h2 {
-  margin-bottom: 10px;
-  color: #f7931a;
+.overview-card {
+    flex: 1;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Mining Animation */
-#mining-animation {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
+.overview-card h2 {
+    color: #f9d342;
+    font-size: 1.2em;
 }
 
-.block {
-  width: 40px;
-  height: 40px;
-  background-color: #f7931a;
-  animation: mine 1s infinite;
+.overview-card p {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.block:nth-child(1) { animation-delay: 0.2s; }
-.block:nth-child(2) { animation-delay: 0.4s; }
-.block:nth-child(3) { animation-delay: 0.6s; }
-.block:nth-child(4) { animation-delay: 0.8s; }
-.block:nth-child(5) { animation-delay: 1s; }
-
-@keyframes mine {
-  0% { transform: scale(1) rotate(0); opacity: 1; }
-  50% { transform: scale(1.2) rotate(10deg); opacity: 0.8; }
-  100% { transform: scale(1) rotate(0); opacity: 1; }
+/* Form and section styling */
+.section {
+    margin-top: 20px;
 }
 
-/* BTC Count and Wallet Text */
-.btc-count,
-#wallet p {
-  margin: 10px 0;
+.section h2 {
+    color: #f9d342;
+    margin-bottom: 15px;
 }
 
-/* Button Styles */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ccc;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+}
+
 button {
-  padding: 10px 20px;
-  background-color: #f7931a;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-  transition: background-color 0.3s ease;
+    background-color: #f9d342;
+    color: #222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #ffa500;
+    background-color: #ffd700;
 }
 
-button:focus {
-  outline: 2px solid #ffa500;
-}
-
-/* Transactions Section */
-#transactions {
-  margin-top: 20px;
-}
-
-#transactions-list {
-  background-color: #292929;
-  padding: 10px;
-  height: 100px;
-  overflow-y: scroll;
-  border-radius: 5px;
-}
-
-/* Transaction Item Styles */
-.transaction {
-  margin-bottom: 5px;
-  font-size: 0.9em;
-  color: #bdbdbd;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 400px) {
-  .container {
-    width: 90%;
-  }
-
-  button {
-    width: 100%;
-    margin: 5px 0;
-  }
+button:active {
+    transform: scale(0.98);
 }
