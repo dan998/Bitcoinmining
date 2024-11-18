@@ -1,0 +1,8 @@
+services:
+  - name: bitcoin-miner
+    type: static
+    plan: free
+    region: oregon
+    staticPublishPath: public # Replace `public` with the directory where your HTML files are located
+    branch: main
+    autoDeploy: true
