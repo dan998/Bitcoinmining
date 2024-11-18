@@ -1,0 +1,14 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "sqlite3": "^5.1.6"  // Optional if using SQLite
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
