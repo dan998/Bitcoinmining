@@ -3,7 +3,6 @@ services:
     type: web
     env: static
     plan: free
-    region: oregon
     buildCommand: ""
     startCommand: ""
     staticPublishPath: public # Replace `public` with the directory where your HTML files are located
